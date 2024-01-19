@@ -6,11 +6,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/login.feature",
+        features = "src/test/resources/features/catalog.feature",
         glue = "co.com.juju.project.stepdefinition",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
         plugin = "pretty",
-        tags = "@authenticationLogin"
+        tags = "@viewProduct"
 )
-public class LoginRunner {
+public class CatalogRunner {
 }

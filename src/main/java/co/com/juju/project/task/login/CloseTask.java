@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.thucydides.core.annotations.Step;
 
-import static co.com.juju.project.ui.login.HomeUI.BUTTON_CLOSE_SESSION;
+import static co.com.juju.project.ui.catalog.HomeUI.BUTTON_CLOSE_SESSION;
 
 public class CloseTask implements Task {
     @Override
@@ -16,7 +16,8 @@ public class CloseTask implements Task {
                 Click.on(BUTTON_CLOSE_SESSION)
         );
     }
-    public static CloseTask session(){
+
+    public static CloseTask session() {
         return Tasks.instrumented(CloseTask.class);
     }
 }

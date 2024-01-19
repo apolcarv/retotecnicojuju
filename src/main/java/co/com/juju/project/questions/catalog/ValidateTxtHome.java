@@ -1,4 +1,4 @@
-package co.com.juju.project.questions.login;
+package co.com.juju.project.questions.catalog;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.thucydides.core.annotations.Step;
 
-import static co.com.juju.project.ui.login.HomeUI.TXT_USER;
+import static co.com.juju.project.ui.catalog.HomeUI.TXT_USER;
 
 @AllArgsConstructor
 @Slf4j

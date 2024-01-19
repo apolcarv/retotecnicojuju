@@ -1,4 +1,4 @@
-package co.com.juju.project.task;
+package co.com.juju.project.hook;
 
 import net.serenitybdd.core.environment.EnvironmentSpecificConfiguration;
 import net.serenitybdd.screenplay.Actor;
@@ -18,7 +18,6 @@ public class OpenWeb implements Task {
     public <T extends Actor> void performAs(T actor) {
         String pathWebUrl = EnvironmentSpecificConfiguration.from(environmentVariables).getProperty(WEB_URL);
         actor.attemptsTo(Open.url(pathWebUrl));
-
     }
 
     public static Performable browserURL() {

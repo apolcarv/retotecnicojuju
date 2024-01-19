@@ -21,4 +21,7 @@ public class LoginUI extends PageObject {
     public static final Target BUTTON_LOGIN = Target.the("pulsa el boton entrar")
             .located(By.xpath("//*[@class='btn second-btn form-login__btn']"));
 
+    public static final Target TXT_FAILD_CREDENTIALS = Target.the("error!!! usuario o contraseña incorrectos")
+            .located(By.xpath("//div//p[@class='first-body' and contains(text(),' Usuario o contraseña incorrectos. ')]"));
+
 }
