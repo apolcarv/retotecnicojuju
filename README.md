@@ -1,7 +1,10 @@
 # Autor: Alejandro Polo Carvajal
 #### https://www.linkedin.com/in/alejandro-polo-carvajal-790b79186/
-## reto_tecnico_juju
-PRUEBA ANALISTA DE CALIDAD
+##### ------------------------------------------------------------------------------------------------------
+# reto_tecnico_juju
+#### PRUEBA ANALISTA DE CALIDAD
+##### ------------------------------------------------------------------------------------------------------
+
 #### Pagina automatizada: https://automationcompany-qa.jujutests.com/
 #### Funciones automatizadas: Login - Catalogo
 #### Patron de diseño: Screenplay
@@ -23,30 +26,33 @@ PRUEBA ANALISTA DE CALIDAD
 #### LoginRunner.java
 #### CatalogRunner.java
 ## Todos los test funcionan correctamente VER IMG-0
-# PASOS PARA LE EJECUCIÓN
+#### (En caso de no ver las IMG en GIT descargar el repositorio)
+# PASOS PARA LA EJECUCIÓN
 
 ## Opcion 1
+### PASO A PASO PARA LA EJECUCIÓN POR CONSOLA
+
+### Comando para limpiar el proyecto y luego ejecuta TODOS los escenarios uno por uno (total 4)
+#### ./gradlew clean test
+### Comando para ejecutar por feature
+#### ./gradlew test --tests "co.com.juju.project.runners.LoginRunner"
+### Comando para generar reporte despues que haya terminado un test (Por consola arrojara la ruta .html )
+#### ./gradlew reports
+### Comando para limpiar los reportes
+#### ./gradlew clearReports
+
+
+
+## Opcion 2
 #### El stakeholder podra ejecutar desde la linea #15 si gusta (Ver IMG-1)
 #### Automaticamente se ejecutara todos los test que estan dentro del feature ( aplica para ambos ) ya que el tag que esta por defecto es general solo para login
 ### IMG-1
 ![img1.png](..%2F..%2FUsers%2Faleja%2FOneDrive%2FEscritorio%2Fimg1.png)
 
-#### En caso de ejecutar individual, solo cambiar en la linea #13  el tags "" cada escenario tiene uno (Ver IMG-2)
+#### En caso de ejecutar individual, solo cambiar en la linea #13  el tags "@tag-que-desee-ejecutar" cada escenario tiene uno (Ver IMG-2)
 ### IMG-2
 ![img2.png](..%2F..%2FUsers%2Faleja%2FOneDrive%2FEscritorio%2Fimg2.png)
 ##### ------------------------------------------------------------------------------------------------------
-
-## Opcion 2
-### PASO A PASO PARA LA EJECUCIÓN POR CONSOLA
-
-## Comando para limpiar el proyecto y luego ejecuta TODOS los escenarios uno por uno (total 4)
-#### ./gradlew clean test
-## Comando para ejecutar por feature 
-#### ./gradlew test --tests "co.com.juju.project.runners.LoginRunner"
-## comando para generar reporte despues que haya terminado un test (Por consola arrojara la ruta .html )
-#### ./gradlew reports   
-## Comando para limpiar los reportes
-#### ./gradlew clearReports
 
 
 # IMG-0
