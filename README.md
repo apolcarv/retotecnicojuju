@@ -14,11 +14,12 @@ PRUEBA ANALISTA DE CALIDAD
 #### ID: Intellij IDEA community Edition 2023.1
 ##### ------------------------------------------------------------------------------------------------------
 
-### Todos los casos pruebas cumplen con cada criterio solitado
+### Todos los casos pruebas cumplen con cada criterio solicitado
 ### Todas las clases estan con auto-ident lines y reformat code
 ### El codigo no tiene ningun Bug o codeSmell 
 ##### ------------------------------------------------------------------------------------------------------
 ## Dentro de esta ruta encontrara dos runners llamados:
+#### src/test/java/co/com/juju/project/runners
 #### LoginRunner.java
 #### CatalogRunner.java
 ## Todos los test funcionan correctamente VER IMG-0
